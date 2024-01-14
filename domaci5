@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Zadatak 1</title>
+    <style>
+        
+        a[href*="google.com"] {
+            color: green;
+        }
+
+        
+        a[href*="link-group.eu"] {
+            color: red;
+        }
+
+        
+        #second-div p:nth-child(odd) {
+            color: red;
+        }
+
+        #second-div p:nth-child(even) {
+            color: blue;
+        }
+
+        
+        #first-div h2::after,
+        #first-div p:nth-child(2)::after,
+        #first-div p:nth-child(3)::after {
+            content: " NOVO";
+            color: yellow;
+        }
+
+        
+        p:last-child:hover {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Glavni Naslov</h1>
+    <p>Paragraf 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Idi na Link Group</a>
+    <div id="first-div">
+        <h2>Podnaslov</h2>
+        <p>Paragraf 2</p>
+        <p>Paragraf 3</p>
+        <div id="second-div">
+            <h3>Podpodnaslov</h3>
+            <p>Paragraf 4</p>
+            <p>Paragraf 5</p>
+            <p>Paragraf 6</p>
+            <p>Paragraf 7</p>
+            <p>Paragraf 8</p>
+        </div>
+    </div>
+    <p>Paragraf 9</p>
+    <p>Paragraf 10</p>
+</body>
+
+</html>
